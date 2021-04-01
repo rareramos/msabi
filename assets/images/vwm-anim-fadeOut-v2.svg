@@ -1,4 +1,4 @@
-<svg id="vwm-anim" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 172 124.91">
+<svg id="vwm-fadeOut-anim" xmlns="http://www.w3.org/2000/svg" viewBox="-40 -20 252 164.91">
 	<g id="logo">
 		<g id="move-elements">
 			<path d="M121.14,95h28.19A22.65,22.65,0,0,0,172,72.38V22.62A22.65,22.65,0,0,0,149.33,0H121V19h33V76H121Z" fill="#afcadd" fill-rule="evenodd"/>
@@ -8,7 +8,7 @@
 		</g>
 		<path d="M115.33,0H36V72.38A22.65,22.65,0,0,0,58.67,95h56.66A22.65,22.65,0,0,0,138,72.38V22.62A22.65,22.65,0,0,0,115.33,0ZM119,19H55V76h64Z" fill="#0f5e9e" fill-rule="evenodd"/>
 	</g>
-	<g id="text-part" opacity="0">
+	<g id="text-part">
 		<path d="M11.6,112.58l2.8,9.74h0l2.83-9.74h1.38l2.83,9.74h0l2.77-9.74h1.22l-3.35,11.33H20.8L18,114.18h0l-2.85,9.73H13.73l-3.35-11.33Z" fill="#0f5e9e"/>
 		<path d="M28.18,120.93l-1.24,3H25.68l4.9-11.33H31.7l4.86,11.33H35.28l-1.25-3Zm2.92-7.07-2.49,6h5Z" fill="#0f5e9e"/>
 		<path d="M39.38,112.58v5.09h0l5.39-5.09h1.65l-5.71,5.13,6,6.2H45.06l-5.67-6h0v6H38.22V112.58Z" fill="#0f5e9e"/>
@@ -24,112 +24,116 @@
 		<path d="M155,118.51v4.37h6.07v1h-7.22V112.58h7v1H155v3.9h5.49v1Z" fill="#0f5e9e"/>
 	</g>
 	<style>
-		#vwm-anim #move-elements > path:nth-child(1) {
-			-webkit-transform: translate(-35px, 0px);
-			    -ms-transform: translate(-35px, 0px);
-			        transform: translate(-35px, 0px);
+		#vwm-fadeOut-anim {
+			overflow: visible;
 		}
-		#vwm-anim #move-elements > path:nth-child(2) {
-			-webkit-transform: translate(36px, 0px);
-			    -ms-transform: translate(36px, 0px);
-			        transform: translate(36px, 0px);
+		#vwm-fadeOut-anim #move-elements > path:nth-child(1) {
+			-webkit-animation: movePart1 0.5s ease-out 0.1s 2 alternate;
+			        animation: movePart1 0.5s ease-out 0.1s 2 alternate;
 		}
-		#vwm-anim #move-elements > path:nth-child(3) {
-			-webkit-transform: translate(-18px, 0px);
-			    -ms-transform: translate(-18px, 0px);
-			        transform: translate(-18px, 0px);
+		#vwm-fadeOut-anim #move-elements > path:nth-child(2) {
+			-webkit-animation: movePart2 0.5s ease-out 0.1s 2 alternate;
+			        animation: movePart2 0.5s ease-out 0.1s 2 alternate;
 		}
-		#vwm-anim #move-elements > path:nth-child(4) {
-			-webkit-transform: translate(18px, 0px);
-			    -ms-transform: translate(18px, 0px);
-			        transform: translate(18px, 0px);
+		#vwm-fadeOut-anim #move-elements > path:nth-child(3) {
+			-webkit-animation: movePart3 0.5s ease-out 0.1s 2 alternate;
+			        animation: movePart3 0.5s ease-out 0.1s 2 alternate;
 		}
-
-		#vwm-anim #move-elements > path {
-			-webkit-animation: moveParts 0.5s ease-in-out 0.6s forwards;
-			        animation: moveParts 0.5s ease-in-out 0.6s forwards;
+		#vwm-fadeOut-anim #move-elements > path:nth-child(4) {
+			-webkit-animation: movePart4 0.5s ease-out 0.1s 2 alternate;
+			        animation: movePart4 0.5s ease-out 0.1s 2 alternate;
 		}
 
-		#vwm-anim #logo {
+		#vwm-fadeOut-anim #logo {
 			-webkit-transform-origin: 87px 47.5px;
 			    -ms-transform-origin: 87px 47.5px;
 			        transform-origin: 87px 47.5px;
-			-webkit-transform: scale(0, 0);
-			    -ms-transform: scale(0, 0);
-			        transform: scale(0, 0);
-			-webkit-animation: scaleLogo 1.8s cubic-bezier(0.37, 0, 0.63, 1) 0s forwards;
-			        animation: scaleLogo 1.8s cubic-bezier(0.37, 0, 0.63, 1) 0s forwards;
+			-webkit-animation: scaleOutLogo 1.2s cubic-bezier(0.36, 0, 0.66, -0.56) 0s forwards;
+			        animation: scaleOutLogo 1.2s cubic-bezier(0.36, 0, 0.66, -0.56) 0s forwards;
 		}
 
-		#vwm-anim #text-part {
-			-webkit-transform: translate(0px, 20px);
-			    -ms-transform: translate(0px, 20px);
-			        transform: translate(0px, 20px);
-			-webkit-animation: fadeInText 0.5s ease-out 1.2s forwards;
-			        animation: fadeInText 0.5s ease-out 1.2s forwards;
+		#vwm-fadeOut-anim #text-part {
+			-webkit-animation: fadeOutText 0.5s ease-in 0s forwards;
+			        animation: fadeOutText 0.5s ease-in 0s forwards;
 		}
 
-		@-webkit-keyframes scaleLogo {
-			0% {
+		@-webkit-keyframes scaleOutLogo {
+			100% {
 				-webkit-transform: scale(0, 0);
 				        transform: scale(0, 0);
-				-webkit-animation-timing-function: ease-out;
-				        animation-timing-function: ease-out;
-			}
-			37%, 92%, 100% {
-				-webkit-transform: scale(1, 1);
-				        transform: scale(1, 1);
-			}
-			62%, 66% {
-				-webkit-transform: scale(0.9, 0.9);
-				        transform: scale(0.9, 0.9);
 			}
 		}
 
-		@keyframes scaleLogo {
-			0% {
+		@keyframes scaleOutLogo {
+			100% {
 				-webkit-transform: scale(0, 0);
 				        transform: scale(0, 0);
-				-webkit-animation-timing-function: ease-out;
-				        animation-timing-function: ease-out;
-			}
-			37%, 92%, 100% {
-				-webkit-transform: scale(1, 1);
-				        transform: scale(1, 1);
-			}
-			62%, 66% {
-				-webkit-transform: scale(0.9, 0.9);
-				        transform: scale(0.9, 0.9);
 			}
 		}
 
-		@-webkit-keyframes moveParts {
+		@-webkit-keyframes movePart1 {
 			to {
-				-webkit-transform: translate(0px, 0px);
-				        transform: translate(0px, 0px);
+				-webkit-transform: translate(20px, 0px);
+				        transform: translate(20px, 0px);
 			}
 		}
 
-		@keyframes moveParts {
+		@keyframes movePart1 {
 			to {
-				-webkit-transform: translate(0px, 0px);
-				        transform: translate(0px, 0px);
+				-webkit-transform: translate(20px, 0px);
+				        transform: translate(20px, 0px);
+			}
+		}
+		@-webkit-keyframes movePart2 {
+			to {
+				-webkit-transform: translate(-20px, 0px);
+				        transform: translate(-20px, 0px);
+			}
+		}
+		@keyframes movePart2 {
+			to {
+				-webkit-transform: translate(-20px, 0px);
+				        transform: translate(-20px, 0px);
+			}
+		}
+		@-webkit-keyframes movePart3 {
+			to {
+				-webkit-transform: translate(10px, 0px);
+				        transform: translate(10px, 0px);
+			}
+		}
+		@keyframes movePart3 {
+			to {
+				-webkit-transform: translate(10px, 0px);
+				        transform: translate(10px, 0px);
+			}
+		}
+		@-webkit-keyframes movePart4 {
+			to {
+				-webkit-transform: translate(-10px, 0px);
+				        transform: translate(-10px, 0px);
+			}
+		}
+		@keyframes movePart4 {
+			to {
+				-webkit-transform: translate(-10px, 0px);
+				        transform: translate(-10px, 0px);
 			}
 		}
 
-		@-webkit-keyframes fadeInText {
+		@-webkit-keyframes fadeOutText {
 			to {
-				opacity: 1;
-				-webkit-transform: translate(0px, 0px);
-				        transform: translate(0px, 0px);
+				opacity: 0;
+				-webkit-transform: translate(0px, 20px);
+				        transform: translate(0px, 20px);
 			}
 		}
 
-		@keyframes fadeInText {
+		@keyframes fadeOutText {
 			to {
-				opacity: 1;
-				-webkit-transform: translate(0px, 0px);
-				        transform: translate(0px, 0px);
+				opacity: 0;
+				-webkit-transform: translate(0px, 20px);
+				        transform: translate(0px, 20px);
 			}
 		}
 	</style>

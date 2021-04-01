@@ -38,7 +38,7 @@ img {
   z-index: 2;
   top: 50%;
   left: 0;
-  transform: translate(-80%, -50%) rotate(45deg);
+  transform: translate(-66%, -50%) rotate(0deg);
   background: linear-gradient(to bottom, #afcadd, #afcadd 50%, #78a3c4, #78a3c4 50%);
   transition: 0.6s ease-in-out; }
   .menu:before {
@@ -65,7 +65,7 @@ img {
   .menu .label {
     position: absolute;
     z-index: 4;
-    right: 7%;
+    right: 16%;
     top: 50%;
     display: flex;
     align-items: center;
@@ -102,9 +102,9 @@ img {
       display: flex;
       align-items: center;
       justify-content: flex-end;
-      transition: 0.6s ease-in-out; }
+      transition: none; }
       .menu .label-text img {
-        height: 40%;
+        height: 48%;
         width: auto;
         margin-right: 1em;
         opacity: 0;
@@ -122,5 +122,20 @@ img {
       background: #2069FC; }
     .menu-pseudo.mod .label-text {
       background: #2069FC; }
+  .menu-core {
+    position: absolute;
+    right: 0;
+    top: 42%;
+    z-index: -1; }
+
+::-webkit-scrollbar {
+  width: 0;
+  /* Remove scrollbar space */
+  background: transparent;
+  /* Optional: just make scrollbar invisible */ }
+
+/* Optional: show position indicator in red */
+::-webkit-scrollbar-thumb {
+  background: #FF0000; }
 
 /*# sourceMappingURL=style.css.map */
