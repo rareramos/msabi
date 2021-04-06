@@ -33,8 +33,8 @@
 			-webkit-transform-origin: 87px 47.5px;
 			    -ms-transform-origin: 87px 47.5px;
 			        transform-origin: 87px 47.5px;
-			-webkit-animation: scaleOutLogo 1.2s cubic-bezier(0.36, 0, 0.66, -0.56) 0s forwards;
-			        animation: scaleOutLogo 1.2s cubic-bezier(0.36, 0, 0.66, -0.56) 0s forwards;
+			-webkit-animation: scaleOutLogo 1.2s cubic-bezier(0.36, 0, 0.66, -0.56) 0s forwards !important;
+			        animation: scaleOutLogo 1.2s cubic-bezier(0.36, 0, 0.66, -0.56) 0s forwards !important;
 		}
 
 		@-webkit-keyframes scaleOutLogo {
