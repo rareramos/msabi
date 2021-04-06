@@ -1,0 +1,104 @@
+<svg id="vwm-fadeOut-anim" xmlns="http://www.w3.org/2000/svg" viewBox="-40 -20 252 140">
+	<g id="logo">
+		<g id="move-elements">
+			<path d="M121.14,95h28.19A22.65,22.65,0,0,0,172,72.38V22.62A22.65,22.65,0,0,0,149.33,0H121V19h33V76H121Z" fill="#afcadd" fill-rule="evenodd"/>
+			<path d="M50.86,76H19V19H50.86V0H0V72.38A22.65,22.65,0,0,0,22.67,95H50.86Z" fill="#afcadd" fill-rule="evenodd"/>
+			<path d="M104.14,95h28.19A22.65,22.65,0,0,0,155,72.38V22.62A22.65,22.65,0,0,0,132.33,0H104V19h33V76H104.14Z" fill="#5e96bb" fill-rule="evenodd"/>
+			<path d="M68.86,76H37V19H68.86V0H18V72.38A22.65,22.65,0,0,0,40.67,95H68.86Z" fill="#5e96bb" fill-rule="evenodd"/>
+		</g>
+		<path d="M115.33,0H36V72.38A22.65,22.65,0,0,0,58.67,95h56.66A22.65,22.65,0,0,0,138,72.38V22.62A22.65,22.65,0,0,0,115.33,0ZM119,19H55V76h64Z" fill="#0f5e9e" fill-rule="evenodd"/>
+	</g>
+	<style>
+		#vwm-fadeOut-anim {
+			overflow: visible;
+		}
+		#vwm-fadeOut-anim #move-elements > path:nth-child(1) {
+			-webkit-animation: movePart1 0.5s ease-out 0.1s 2 alternate;
+			        animation: movePart1 0.5s ease-out 0.1s 2 alternate;
+		}
+		#vwm-fadeOut-anim #move-elements > path:nth-child(2) {
+			-webkit-animation: movePart2 0.5s ease-out 0.1s 2 alternate;
+			        animation: movePart2 0.5s ease-out 0.1s 2 alternate;
+		}
+		#vwm-fadeOut-anim #move-elements > path:nth-child(3) {
+			-webkit-animation: movePart3 0.5s ease-out 0.1s 2 alternate;
+			        animation: movePart3 0.5s ease-out 0.1s 2 alternate;
+		}
+		#vwm-fadeOut-anim #move-elements > path:nth-child(4) {
+			-webkit-animation: movePart4 0.5s ease-out 0.1s 2 alternate;
+			        animation: movePart4 0.5s ease-out 0.1s 2 alternate;
+		}
+
+		#vwm-fadeOut-anim #logo {
+			-webkit-transform-origin: 87px 47.5px;
+			    -ms-transform-origin: 87px 47.5px;
+			        transform-origin: 87px 47.5px;
+			-webkit-animation: scaleOutLogo 1.2s cubic-bezier(0.36, 0, 0.66, -0.56) 0s forwards;
+			        animation: scaleOutLogo 1.2s cubic-bezier(0.36, 0, 0.66, -0.56) 0s forwards;
+		}
+
+		@-webkit-keyframes scaleOutLogo {
+			100% {
+				-webkit-transform: scale(0, 0);
+				        transform: scale(0, 0);
+			}
+		}
+
+		@keyframes scaleOutLogo {
+			100% {
+				-webkit-transform: scale(0, 0);
+				        transform: scale(0, 0);
+			}
+		}
+
+		@-webkit-keyframes movePart1 {
+			to {
+				-webkit-transform: translate(20px, 0px);
+				        transform: translate(20px, 0px);
+			}
+		}
+
+		@keyframes movePart1 {
+			to {
+				-webkit-transform: translate(20px, 0px);
+				        transform: translate(20px, 0px);
+			}
+		}
+		@-webkit-keyframes movePart2 {
+			to {
+				-webkit-transform: translate(-20px, 0px);
+				        transform: translate(-20px, 0px);
+			}
+		}
+		@keyframes movePart2 {
+			to {
+				-webkit-transform: translate(-20px, 0px);
+				        transform: translate(-20px, 0px);
+			}
+		}
+		@-webkit-keyframes movePart3 {
+			to {
+				-webkit-transform: translate(10px, 0px);
+				        transform: translate(10px, 0px);
+			}
+		}
+		@keyframes movePart3 {
+			to {
+				-webkit-transform: translate(10px, 0px);
+				        transform: translate(10px, 0px);
+			}
+		}
+		@-webkit-keyframes movePart4 {
+			to {
+				-webkit-transform: translate(-10px, 0px);
+				        transform: translate(-10px, 0px);
+			}
+		}
+		@keyframes movePart4 {
+			to {
+				-webkit-transform: translate(-10px, 0px);
+				        transform: translate(-10px, 0px);
+			}
+		}
+	</style>
+</svg>
